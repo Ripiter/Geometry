@@ -11,11 +11,7 @@ namespace Geometry
             this.V = v;
             this.Name = "Parallelogram";
         }
-
-        public Parallelogram(double a, double b) : base(a, b)
-        {
-
-        }
+        
         public double V { get => v; set => v = value; }
         public override double CalculatePerimeter()
         {

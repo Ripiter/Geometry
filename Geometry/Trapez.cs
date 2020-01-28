@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geometry
 {
-    class Trapez : Parallelogram
+    class Trapez : Rectangle
     {
         double c, d;
         public Trapez(double a, double b, double c, double d) : base(a, b)
