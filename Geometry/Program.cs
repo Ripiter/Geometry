@@ -11,8 +11,9 @@ namespace Geometry
         static void Main(string[] args)
         {
             Geometry[] geoDude = {
+                new Square(5),
                 new Rectangle(3,5),
-                new Square(5,5),
+                new Parallelogram(3,5,20),
                 new Trapez(10, 9, 8, 9),
                 new Triangle(10, 6, 10)
             };

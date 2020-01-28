@@ -8,8 +8,8 @@ namespace Geometry
 {
     class Trapez : Square
     {
-        double c, d;
-        public Trapez(double a, double b, double c, double d) : base(a, b)
+        double b, c, d;
+        public Trapez(double a, double b, double c, double d) : base(a)
         {
             this.C = c;
             this.D = d;
@@ -18,6 +18,7 @@ namespace Geometry
 
         public double C { get => c; set => c = value; }
         public double D { get => d; set => d = value; }
+        public double B { get => b; set => b = value; }
 
         public override double CalculatePerimeter()
         {
