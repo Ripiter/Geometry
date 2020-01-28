@@ -2,22 +2,24 @@
 
 namespace Geometry
 {
-    class Parallelogram : Square
+    class Parallelogram : Rectangle
     {
-        double v, b;
-        public Parallelogram(double a, double b, double v) : base(a)
+        double v;
+
+        public Parallelogram(double a, double b, double v) : base(a, b)
         {
             this.V = v;
-            this.B = b;
             this.Name = "Parallelogram";
         }
-        
-        public double V { get => v; set => v = value; }
-        public double B { get => b; set => b = value; }
 
+        public Parallelogram(double a, double b) : base(a, b)
+        {
+
+        }
+        public double V { get => v; set => v = value; }
         public override double CalculatePerimeter()
         {
-            return (2 * A) + (2 * b);
+            return (2 * A) + (2 * B);
         }
 
         public override double CalculateArea()

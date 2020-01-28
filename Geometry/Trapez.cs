@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Geometry
 {
-    class Trapez : Square
+    class Trapez : Parallelogram
     {
-        double b, c, d;
-        public Trapez(double a, double b, double c, double d) : base(a)
+        double c, d;
+        public Trapez(double a, double b, double c, double d) : base(a, b)
         {
             this.C = c;
             this.D = d;
@@ -18,7 +18,6 @@ namespace Geometry
 
         public double C { get => c; set => c = value; }
         public double D { get => d; set => d = value; }
-        public double B { get => b; set => b = value; }
 
         public override double CalculatePerimeter()
         {

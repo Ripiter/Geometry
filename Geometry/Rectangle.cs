@@ -6,28 +6,26 @@ using System.Threading.Tasks;
 
 namespace Geometry
 {
-    class Rectangle : Geometry
+    class Rectangle : Square
     {
-        double a, b;
+        double b;
 
-        public Rectangle(double a, double b)
+        public Rectangle(double a, double b) : base(a)
         {
-            this.A = a;
             this.B = b;
             this.Name = "Reckangle";
         }
-
-        public double A { get => a; set => a = value; }
+        
         public double B { get => b; set => b = value; }
 
         public override double CalculateArea()
         {
-            return a * b;
+            return A * b;
         }
 
         public override double CalculatePerimeter()
         {
-            return 2 * (a + b);
+            return 2 * (A + b);
         }
     }
 }
